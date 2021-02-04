@@ -1,14 +1,21 @@
-No = "1234006"
-Len = (len(No))
-Median = int(Len/2)+1
-strMedian=str(Median)
-Index = No.index(strMedian)
-print("length is :", Len)
-print("Mid is ", Median)
-print("Index of Median is ",Index)
-if Len % 2 == 0:
-    print("There is no middle No so Aborted....")
+s = "1234006"
+Leftsum = 0
+Rightsum = 0
+
+for i in range(0, int(len(s) / 2)):
+    Leftsum = Leftsum + int(s[i])
+    Rightsum = (Rightsum + int(s[len(s) - 1 - i]))
+
+print("Sum of Left:",Leftsum)
+print("Sum of Right", Rightsum)
+
+if (Leftsum == Rightsum):
+    print("Balanced", end='\n')
 else:
-    pass
+    print("Not Balanced", end='\n')
+
+
+
+
 
 
