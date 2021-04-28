@@ -9,7 +9,7 @@ options.headless = True #True means, it will run in headless mode means without 
 driver = webdriver.Chrome(ChromeDriverManager().install(), options=options)
 driver.implicitly_wait(5)
 driver.maximize_window()
-print("Just checking new pycharm")
+print("Just checking new pycharm......")
 
 
 driver.get("https://www.google.com/")
