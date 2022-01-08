@@ -9,7 +9,6 @@ Below are the Conditional Commands:
 from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
 
-
 url = "http://demo.guru99.com/test/newtours/"
 driver = webdriver.Chrome(ChromeDriverManager().install())
 driver.maximize_window()
